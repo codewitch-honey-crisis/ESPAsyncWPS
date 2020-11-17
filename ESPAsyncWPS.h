@@ -81,7 +81,7 @@ void WiFiEvent(WiFiEvent_t event, system_event_info_t info){
       break;
   }
 }
-void beginWps() {
+void beginWPS() {
   wpsInitConfig();
   esp_wifi_wps_enable(&_wps_config);
   esp_wifi_wps_start(0);
